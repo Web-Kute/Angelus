@@ -1,0 +1,92 @@
+@mixin flexRow ($display, $direction) {
+	display: $display;
+	-webkit-flex-direction: $direction;
+	    -ms-flex-direction: $direction;
+	        flex-direction: $direction;
+}
+@mixin center() {
+	margin-right: auto;
+	margin-left: auto;
+}
+@mixin arrowLine () {
+	margin: 0 auto;
+	width: 35px;
+	height: 8px;
+	background-color: $white;
+	border-radius: 20px;
+}
+@mixin arrowAnimDown($duration, $count) {
+	-webkit-animation-duration: $duration;
+	   -moz-animation-duration: $duration;
+	     -o-animation-duration: $duration;
+	        animation-duration: $duration;
+	-webkit-animation-name: arrowbouncedown;
+	   -moz-animation-name: arrowbouncedown;
+	     -o-animation-name: arrowbouncedown;
+	        animation-name: arrowbouncedown;
+	-webkit-animation-iteration-count: $count;
+	   -moz-animation-iteration-count: $count;
+	     -o-animation-iteration-count: $count;
+	        animation-iteration-count: $count;
+}
+@mixin arrowAnimRight($duration, $count) {
+	-webkit-animation-duration: $duration;
+	   -moz-animation-duration: $duration;
+	     -o-animation-duration: $duration;
+	        animation-duration: $duration;
+	-webkit-animation-name: arrowbounceright;
+	   -moz-animation-name: arrowbounceright;
+	     -o-animation-name: arrowbounceright;
+	        animation-name: arrowbounceright;
+	-webkit-animation-iteration-count: $count;
+	   -moz-animation-iteration-count: $count;
+	     -o-animation-iteration-count: $count;
+	        animation-iteration-count: $count;
+}
+@mixin imgSection($bgimg) {
+	height: 100vh;
+	height: $viewport;
+	background-size: cover;
+	background-image: url($bgimg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+@mixin roundIcon($w, $h, $bgpict) {
+	width: $w;
+	height: $h;
+	border-radius:50%;
+	    -moz-border-radius:50%;
+	    -webkit-border-radius:50%;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-image: url($bgpict);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+@mixin roundCircleBorder($w, $h, $bc) {
+	width: $w;
+	height: $h;
+	border-radius: 50%;
+	border: 2px solid $bc;
+	background-color: transparent;
+	background-position: center center;
+}
+@mixin bulle($w, $h) {
+	width: $w;
+	height: $h;
+	border-radius:50%;
+	    -moz-border-radius:50%;
+	    -webkit-border-radius:50%;
+	background-color: $colorMain;
+	opacity: .6;
+	display: flex;
+	display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin bgImg($bgimg) {
+	background-image: url($bgimg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}

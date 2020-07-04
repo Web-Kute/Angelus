@@ -1,0 +1,100 @@
+#Splash Page
+#DirectoryIndex index.html index.php
+# BEGIN LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END LSCACHE
+# BEGIN NON_LSCACHE
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+# END NON_LSCACHE
+# BEGIN WordPress
+# Les directives (lignes) entre 'BEGIN WordPress' et 'END WordPress' sont
+# généré dynamiquement, et ne doivent uniquement être modifiées via les filtres WordPress.
+# Toute modification des directives entre ces marqueurs sera outrepassée.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# Redirection vers HTTPS 
+<IfModule mod_rewrite.c>
+ RewriteCond     %{SERVER_PORT} ^80$
+ RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R]
+</IfModule>
+
+# protect the htaccess file
+<files .htaccess>
+	order allow,deny
+	deny from all
+</files>
+
+# protect wpconfig.php
+<files wp-config.php>
+	order allow,deny
+	deny from all
+</files>
+<Files xmlrpc*="">
+    order deny,allow
+    deny from all
+</Files>
+
+# MOD_DEFLATE COMPRESSION
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+#Pour les navigateurs incompatibles
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+#ne pas mettre en cache si ces fichiers le sont déjà
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+#les proxies doivent donner le bon contenu
+Header append Vary User-Agent env=!dont-vary
+
+
+# TN - START EXPIRES CACHE 
+ExpiresActive On
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/svg "access 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/xhtml-xml "access 1 month"
+ExpiresByType application/javascript "access 1 month" 
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresDefault "access 1 month"
+# TN - END EXPIRES CACHE
+
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\.(ico|jpe?g|pdf|png|gif|ttf|woff|js|css|gz)$">
+ Header set Cache-Control "max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\.(js)$">
+ Header set Cache-Control "max-age=2592000, private"
+ </FilesMatch>
+<filesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=7200, public"
+</filesMatch>
+# Disable caching for scripts and other dynamic files
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+
+# KILL THEM ETAGS
+Header unset ETag
+FileETag none
+# END WordPress

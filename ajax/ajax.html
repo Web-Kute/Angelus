@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ajax demo</title>
+  <style>
+  div {
+    color: red;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 300px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+     <input type="text" id="ref">
+    <button id="action">Afficher</button><br />
+    <div id="r">Entrez un nombre compris entre 1 et 10 pour afficher un proverbe chinois</div>
+<button id="getaction">Lancer la requête HTTP GET</button><br />
+
+    <script>
+      $(function() {
+        $('#action').click(function() {
+          let param = 'l=' + $('#ref').val();
+          $('#r').load('proverbe.php',param);
+        });  
+      });
+    </script>
+ <script>
+   $(function() {
+     $('#getaction').click(function() {
+       $.get('proverbe.php?l=5', function(data) {
+         alert(data);
+       });    
+     });  
+   });
+   </script>
+</body>
+</html>

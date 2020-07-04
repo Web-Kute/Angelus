@@ -1,0 +1,1 @@
+<figure><a href="<?php echo home_url( '/' ); ?>" title="Angelus Plongée, baptêmes, explorations, formations"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Logo-Angelus-Plongee.svg" width="120" height="120" alt="Angelus Plongée, La plongée à Belle-Île-en-Mer"></a></figure>

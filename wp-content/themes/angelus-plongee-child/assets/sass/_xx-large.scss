@@ -1,0 +1,44 @@
+@media only screen and (min-width:1824px) {
+    /* MENU */
+    /* Display Desktop & Landscape Tablet */
+    .navigation.desktop {
+        display: block;
+    }
+    /* Hide Mobile & Portrait Tablet */
+    .navigation.mobile {
+        display: none;
+    }
+    /*--------------------------------------------------------------*/
+    /* Home */
+    .home {
+        h1 {
+            margin: 2rem 0 0.1rem;
+            font-size: 3.875rem;
+        }
+        h2 {
+            &.sub-title {
+                font-size: 2.12em;
+            }
+        }
+    }
+    .testimony {
+        margin-bottom: 8rem;
+        h3 {
+            font-size: 2rem;
+        }
+    }
+    /* Nav TABS */
+    .nav-tabs {
+        .nav-item {
+            .nav-link {
+                font-size: 1.2em;
+            }
+        }
+    }
+/*--------------------------------------------------------------*/
+    .activity-page {
+        p {
+            font-size: 1em;
+        }   
+    }
+}

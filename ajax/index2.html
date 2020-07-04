@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ajax - Load Php</title>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  
+  <body>
+    <input type="text" id="ref">
+    <button id="action">Afficher</button><br />
+    <div id="r">Entrez un nombre compris entre 1 et 10 pour afficher un proverbe chinois</div>
+    <div id="message"></div>
+    <script>
+      $(function() {
+        $('#action').click(function() {
+          $(document).ajaxSend(function(ev, req, options){
+            $('#message').append('Méthode ajaxSend exécutée, ');
+            $('#message').append('nom du fichier : ' + options.url + '<br>');
+          });
+          $.ajax({
+            type: 'GET',
+            url: 'proverbe.php?l=7',
+            timeout: 3000,
+            success: function(data) {
+              alert(data); },
+            error: function() {
+              alert('La requête n\'a pas abouti'); }
+          });   
+        });  
+      });
+
+      /* Événements associés à une requête AJAX */
+      $(function() {
+        $('#action').click(function() {
+          $(document).ajaxStart(function() {
+            $('#message').html('Méthode ajaxStart exécutée<br>');
+          });
+          $(document).ajaxSend(function(ev, req, options){
+            $('#message').append('Méthode ajaxSend exécutée, ');
+            $('#message').append('nom du fichier : ' + options.url + '<br>');
+          });
+          $(document).ajaxStop(function(){
+            $('#message').append('Méthode ajaxStop exécutée<br>');
+          });
+          $(document).ajaxSuccess(function(ev, req, options){
+            $('#message').append('Méthode ajaxSuccess exécutée<br>');
+          });
+          $(document).ajaxComplete(function(ev, req, options){
+            $('#message').append('Méthode ajaxComplete exécutée<br>');
+          });
+          $(document).ajaxError(function(ev, req, options, erreur){
+            $('#message').append('Méthode ajaxError exécutée, ');
+            $('#message').append('erreur : ' + erreur + '<br>');
+          });
+          $('#donnees').load('affiche.htm');
+        });  
+      });
+      </script>
+  </body>
+</html>

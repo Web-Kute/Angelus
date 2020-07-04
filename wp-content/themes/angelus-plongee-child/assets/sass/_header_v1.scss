@@ -1,0 +1,168 @@
+/* Header */
+.rwd-break {
+    display: none;
+}
+#top-header {
+  background-color: $white;
+}
+.header-left, .header-right {
+	position: absolute;
+}
+.desktop-menu {
+	figure {
+		&:hover {
+			-webkit-animation: pulse 1s;
+		    animation: pulse 1s;
+		}
+	}
+}
+.header {
+	&-left {
+		top: 0;
+		left: 0;
+		margin-left: 50px;
+		z-index: 130;
+		background-color: transparent;
+		height: 70px;
+		width: 40%;
+		.logo-text-left {
+			font-family: 'PlayfairDisplay-BoldItalic';
+			font-size: 2.5rem;
+			a {
+				color: $colorLink;
+				-webkit-transition: color .5s;
+				   -moz-transition: color .5s;
+				    -ms-transition: color .5s;
+				     -o-transition: color .5s;
+				        transition: color .5s;
+				&:visited {
+					color: $colorLink;
+				}
+				&:hover {
+					color: $colorSecondary;
+				}
+			}
+		}
+		.logo-text-sub {
+			font-family: 'Roboto Light';
+			font-size: 1rem;
+			color: $colorMain;
+			margin-top: -12.5px;
+			margin-left: -5px;
+			letter-spacing: 3.3px;
+		}
+	}
+	&-right {
+		top: 30px;
+		right: 0;
+		margin-right: 50px;
+		z-index: 10;
+		.logo-text-right {
+			span {
+				font-size: 2rem;
+				margin-right: 2rem;
+				a {
+					-webkit-transition: color .5s;
+					   -moz-transition: color .5s;
+					    -ms-transition: color .5s;
+					     -o-transition: color .5s;
+					        transition: color .5s;
+				    svg {
+						&:hover {
+							-webkit-animation: pulse 1s;
+						    animation: pulse 1s;
+						}
+				    }
+				}
+			}
+		}
+	}
+}
+a {
+	color: $colorLink;
+	&:hover {
+		color: $colorSecondary;
+	}
+}
+
+.home {
+	h1 {
+		margin:2rem 0 .1rem;
+		&.entry-title {
+			display: none;
+		}
+	}
+	h2 {
+		&.sub-title {
+			font-size: 2.12em;
+			margin-bottom: 2rem;
+		}
+	}
+}
+#modal-home {
+	h1 {
+		font-size: 2.875em;
+		margin: 0 0 1rem;
+	}
+}
+.modal-footer {
+	.btn-secondary {
+		&:hover {
+			background-color: $colorMain;
+		}
+	}
+}
+h1 {
+	font-family: 'PlayfairDisplay-BoldItalic';
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: flex-start;
+	        align-items: flex-start;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: 2.3rem;
+	line-height: 1;
+	color: $colorLink;
+	text-align: center;
+	margin: 2rem 0;
+}
+h2 {
+	&.home-title {
+		display: none;
+	}
+}
+h2 {
+	font-family: 'PlayfairDisplay-Regular';
+	font-size: 1.875em;
+	color: $colorMain;
+}
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+h4{
+	font-family: 'PlayfairDisplay-Regular';
+	font-size: 1.22rem;
+    letter-spacing: 1px;
+    line-height: 1;
+	color: $colorMain;
+}
+.logo-home {
+	display: none;
+}
+.title-header {
+	font-family: 'PlayfairDisplaySC-Bold';
+	font-weight: 100;
+	font-size: 2.5rem;
+	a {
+		color: $colorLink;
+	}
+}
+
+.subtitle-header {
+	position: relative;
+	letter-spacing: .3em;
+	font-family: 'Roboto', sans-serif;
+	font-size: .8rem;
+	color: $colorMain;
+}

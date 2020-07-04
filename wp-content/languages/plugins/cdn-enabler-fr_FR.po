@@ -1,0 +1,92 @@
+# Translation of Plugins - CDN Enabler - WordPress CDN Plugin - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - CDN Enabler - WordPress CDN Plugin - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-07-15 12:28:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - CDN Enabler - WordPress CDN Plugin - Development (trunk)\n"
+
+#: inc/cdn_enabler_settings.class.php:151
+msgid "Enter the exclusions (directories or extensions) separated by"
+msgstr "Saisissez les exclusions (répertoires ou extensions) séparées par"
+
+#: inc/cdn_enabler_settings.class.php:141
+msgid "Exclusions"
+msgstr "Exclusions"
+
+#. Author URI of the plugin/theme
+msgid "https://www.keycdn.com"
+msgstr "https://www.keycdn.com"
+
+#. Author of the plugin/theme
+msgid "KeyCDN"
+msgstr "KeyCDN"
+
+#. Description of the plugin/theme
+msgid "Simply integrate a Content Delivery Network (CDN) into your WordPress site."
+msgstr "Intégrez simplement un Content Delivery Network (CDN) dans votre site WordPress."
+
+#. Plugin Name of the plugin/theme
+msgid "CDN Enabler"
+msgstr "CDN Enabler"
+
+#: inc/cdn_enabler_settings.class.php:179
+msgid "Enable CDN for HTTPS connections (default: disabled)."
+msgstr "Activer le CDN pour les connexions HTTPS (par défaut&nbsp;: désactivé)."
+
+#: inc/cdn_enabler_settings.class.php:173
+msgid "CDN HTTPS"
+msgstr "CDN en HTTPS"
+
+#: inc/cdn_enabler_settings.class.php:165
+msgid "Enable CDN for relative paths (default: enabled)."
+msgstr "Activer le CDN pour les chemins relatifs (par défaut&nbsp;: activé)."
+
+#: inc/cdn_enabler_settings.class.php:159
+msgid "Relative Path"
+msgstr "Chemin relatif"
+
+#: inc/cdn_enabler_settings.class.php:147
+msgid "Default: <code>.php</code>"
+msgstr "Par défaut&nbsp;: <code>.php</code>"
+
+#: inc/cdn_enabler_settings.class.php:133
+msgid "Assets in these directories will be pointed to the CDN URL. Enter the directories separated by"
+msgstr "Les fichiers de ces répertoires seront pointés à l&rsquo;URL du CDN. Saisissez les répertoires séparés par"
+
+#: inc/cdn_enabler_settings.class.php:129
+msgid "Default: <code>wp-content,wp-includes</code>"
+msgstr "Par défaut&nbsp;: <code>wp-content,wp-includes</code>"
+
+#: inc/cdn_enabler_settings.class.php:123
+msgid "Included Directories"
+msgstr "Répertoires inclus"
+
+#: inc/cdn_enabler_settings.class.php:115
+msgid "Enter the CDN URL without trailing"
+msgstr "Saisissez l&rsquo;URL du CDN sans la barre oblique de fin"
+
+#: inc/cdn_enabler_settings.class.php:106
+msgid "CDN URL"
+msgstr "L&rsquo;URL du CDN"
+
+#: inc/cdn_enabler_settings.class.php:94
+msgid "Combine CDN Enabler with <b><a href=\"%s\">%s</a></b> for even faster WordPress performance."
+msgstr "Combinez CDN Enabler avec <b><a href=\"%s\">%s</a></b> pour encore plus améliorer les performances de WordPress."
+
+#: inc/cdn_enabler_settings.class.php:90
+msgid "CDN Enabler Settings"
+msgstr "Réglages de CDN Enabler"
+
+#: inc/cdn_enabler.class.php:167
+msgid "CDN Enabler is optimized for WordPress %s. Please disable the plugin or upgrade your WordPress installation (recommended)."
+msgstr "CDN Enabler est optimisé pour WordPress %s. Veuillez désactiver l&rsquo;extension ou mettre à niveau votre installation de WordPress (recommandé)."
+
+#: inc/cdn_enabler.class.php:113
+msgid "Settings"
+msgstr "Réglages"

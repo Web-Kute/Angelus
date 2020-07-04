@@ -1,0 +1,469 @@
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width:321px) {
+  /* Reset */
+  ul, ol {
+    font-size: .8rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+  #breadcrumbs {
+      display: none;
+  }
+/*--------------------------------------------------------------*/
+	/* MENU */
+	/* Hide Mobile & Portrait Tablet */
+	.navigation.desktop {
+	    display: none;
+	}
+
+	/* Display Desktop & Landscape Tablet */
+	.navigation.mobile {
+	    display: block;
+	}
+
+	.desktop-menu {
+	    display: none;
+	}
+
+	#mobile-menu {
+	    display: flex;
+      display: -webkit-flex;
+      padding-top: 1.25rem;
+	}
+
+	#burgerMenu {
+	    display: none;
+	    height: 560.5px;
+	}
+
+	:not(.home) .header {
+	    &-left {
+	        max-width: 160px;
+	        margin-top: 20px;
+	        margin-left: 1rem;
+	        background-color: transparent;
+
+	        .logo-text-left {
+	            font-size: 1.5rem;
+	            line-height: 1;
+	        }
+	    }
+	}
+
+  :not(.home) .header {
+    &-left {
+      max-width: 50px;
+      margin-top: 20px;
+      margin-left: 1rem;
+      background-color: transparent;
+      z-index: 200;
+    }
+    &-right {
+      max-width: 40px;
+      margin-right: 1rem;
+      padding: 0;
+      &-menu {
+        display: none;
+      }
+      &-social {
+        -webkit-transform: scale(.9);
+           -moz-transform: scale(.9);
+            -ms-transform: scale(.9);
+             -o-transform: scale(.9);
+                transform: scale(.9);
+          padding-left: 0;
+        span {
+          position: relative;
+          &:nth-child(2) {
+            top: 1rem;
+          }
+        }
+      }
+    }
+  }
+/*--------------------------------------------------------------*/
+  nav {
+    &.mobile {
+      ul {
+        li {
+          padding-bottom: .7rem;
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  #logo {
+    padding-bottom: 0;
+  }
+	/*--------------------------------------------------------------*/
+	.home {
+    @include imgSection("#{$baseImg}img/home-angelus-m.jpg");
+    background-position: 0;
+	    h1 {
+	        font-size: 1.675em;
+	        margin: 0;
+	    }
+
+	    h2 {
+	        font-size: 1.675em;
+
+	        &.sub-title {
+	            font-size: 0.85em;
+              margin-bottom: 0;
+	        }
+	    }
+
+	    h3 {
+	        font-size: 1.3em;
+	    }
+
+	    p {
+	        font-size: 1em;
+	    }
+
+	    .cta_home {
+	        -webkit-transform: scale(.8);
+	        -moz-transform: scale(.8);
+	        -ms-transform: scale(.8);
+	        -o-transform: scale(.8);
+	        transform: scale(.8);
+	    }
+      .aligncenter {
+        margin-bottom: 0;
+      }
+	    #home {
+	        top: 0;
+	    }
+
+	    .header {
+	        &-left {
+	            position: relative;
+	            background-color: transparent;
+	            padding-left: 0;
+	            height: unset;
+	        }
+
+	        &-right {
+	            display: none;
+	        }
+	    }
+
+	    .mobile-menu-logo {
+	        display: none;
+	    }
+
+	}
+
+	.logo-home {
+	    display: block;
+	    max-height: 290px;
+	    -webkit-transform: scale(0.7);
+	    -moz-transform: scale(0.7);
+	    -ms-transform: scale(0.7);
+	    -o-transform: scale(0.7);
+	    transform: scale(0.7);
+	}
+
+	.testimony {
+	    display: none;
+	}
+
+	.container-number {
+	    display: none;
+	}
+    /*--------------------------------------------------------------*/
+    #about {
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        h6 {
+            font-size: 1.1em;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .openBtn {
+            -webkit-transform: scale(.9);
+            -moz-transform: scale(.9);
+            -ms-transform: scale(.9);
+            -o-transform: scale(.9);
+            transform: scale(.9);
+        }
+    }
+    #activity {
+      h2 {
+        margin-top: 2rem;
+        color: $colorSecondary;
+      }
+    }
+    /*--------------------------------------------------------------*/
+    /* Activity & Fare */
+    /* Home */
+    ul {
+        &.activity-fare {
+            margin-top: 2rem;
+
+            li {
+                list-style: none;
+                margin-bottom: 1vh;
+
+                a {
+                    font-size: 1.1rem;
+                    color: $white;
+                    -webkit-transition: color 0.5s;
+                    -moz-transition: color 0.5s;
+                    -ms-transition: color 0.5s;
+                    -o-transition: color 0.5s;
+                    transition: color 0.5s;
+
+                    &:hover {
+                        color: $colorSecondary;
+                    }
+
+                    &:before {
+                        font-size: 1rem;
+                        content: ".";
+                        margin-top: -1rem;
+                        margin-left: -1rem;
+                        -webkit-transform: scale(3.2);
+                        -moz-transform: scale(3.2);
+                        -ms-transform: scale(3.2);
+                        -o-transform: scale(3.2);
+                        transform: scale(3.2);
+                    }
+                }
+            }
+        }
+    }
+
+/* Temoignages */
+    #testimony {
+        h6 {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+    }
+/* Slick Carousel */
+  	.testimonials {
+  	    height: inherit;
+
+  	    h4 {
+  	        font-size: 1.875rem;
+  	        line-height: 1.5;
+  	    }
+
+  	    h5 {
+  	        font-family: 'PlayfairDisplay-Italic';
+  	        color: $colorMain;
+  	        font-size: 1.4rem;
+  	        line-height: 1.1;
+  	        padding-left: 2rem;
+  	        letter-spacing: -0.8px;
+  	        position: relative;
+  	        text-align: center;
+
+  	        &:before {
+  	            content: "";
+  	            position: absolute;
+  	            top: -20px;
+  	            left: -7px;
+  	            width: 2em;
+  	            height: 2em;
+  	            background-image: url(#{$baseImg}icons/left-quote.svg);
+  	            background-repeat: no-repeat;
+  	            background-position: center center;
+  	        }
+  	    }
+
+  	    .slick-slide {
+  	        h4 {
+  	            text-align: center;
+  	        }
+
+  	        p {
+  	            font-size: 1rem;
+  	            line-height: 1.1;
+  	        }
+  	    }
+
+  	    .slick-dots {
+  	        li {
+  	            button {
+  	                &:before {
+  	                    font-size: .6rem;
+  	                }
+  	            }
+  	        }
+  	    }
+  	}
+  	/*--------------------------------------------------------------*/
+  	/* Belle Ile */
+  	#belleile {
+        h3{
+          font-size: 1.2rem;
+        }
+  	    a {
+  	        font-size: 1.2rem;
+  	    }
+  	}
+
+  	.text-spots {
+  	    font-size: 7vh;
+  	}
+    .text-belle {
+        font-size: 1.1rem;
+        padding-bottom: 1rem;
+    }
+  	/*--------------------------------------------------------------*/
+  	/* Socket */
+  	.socket {
+  	    font-size: .6rem;
+  	}
+
+  	a.top {
+  	    -webkit-transform: scale(.6);
+  	    -moz-transform: scale(.6);
+  	    -ms-transform: scale(.6);
+  	    -o-transform: scale(.6);
+  	    transform: scale(.6);
+  	    right: 0;
+  	}
+  	/*--------------------------------------------------------------*/
+  	/* PAGES */
+  	/*--------------------------------------------------------------*/
+  	h1 {
+  	    font-size: 2rem;
+  	}
+
+  	h3 {
+  	    font-size: 1.3rem;
+  	}
+
+  	.activity-page {
+  	    p {
+  	        font-size: .8em;
+  	    }
+  	}
+
+  	.circle-border {
+  	    -webkit-transform: scale(.8);
+  	    -moz-transform: scale(.8);
+  	    -ms-transform: scale(.8);
+  	    -o-transform: scale(.8);
+  	    transform: scale(.8);
+  	}
+
+  	.about-angel {
+  	    table {
+  	        tr {
+  	            td {
+  	                padding: 10px;
+  	                font-size: .6rem;
+  	            }
+  	        }
+  	    }
+  	}
+
+  	.activity-page {
+  	    h2 {
+  	        font-size: 1.475em;
+  	    }
+  	}
+
+  	/* Nav TABS */
+    .site-main {
+    	.nav-tabs {
+    	    .nav-item {
+    	        .nav-link {
+    	            font-size: 1em;
+    	        }
+    	    }
+    	}
+    }
+
+  	.pages-content {
+      width: 95%;
+  	    h2 {
+  	        font-size: 1.2em;
+  	    }
+
+  	    ol {
+  	        font-size: .8em;
+  	    }
+  	}
+    /*--------------------------------------------------------------*/
+                            /* Aside */
+    /*--------------------------------------------------------------*/
+    .wrapper {
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        .content-single {
+            width: 100%;
+        }
+    }
+    .site-main {
+        .side_bar {
+            margin: 2rem;
+        }
+    }
+  	/*--------------------------------------------------------------*/
+    /* Footer */
+    .footer {
+        #copyright {
+          margin-right: 0;
+          font-size: .7rem;
+        }
+      }
+  	/* Crédits */
+  	.page-template-page-credits {
+  	    background-image: unset;
+  	    position: relative;
+  	    display: flex;
+        display: -webkit-flex;
+  	    align-items: center;
+
+  	    .site-main {
+  	        h1 {
+  	            color: $colorLink;
+  	        }
+
+  	        h2,
+  	        p,
+  	        a {
+  	            color: $black;
+  	        }
+
+  	        p {
+  	            font-size: .8em;
+  	        }
+
+  	        .pages-content {
+  	            width: 100%;
+  	            margin-bottom: 2rem;
+  	            padding: 0 1rem;
+  	        }
+  	    }
+  	}
+  	/* Trip Advisor */
+  .wprev-no-slider {
+      width: 100%;
+      margin: 0;
+      ul {
+        padding: 5px;
+      }
+  }
+}

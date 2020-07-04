@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+	Landscape
+--------------------------------------------------------------*/
+@media only screen and (orientation:landscape) and (max-width: 823px) {
+    /* MENU */
+    /* Hide Mobile & Portrait Tablet */
+    .navigation.desktop {
+        display: none;
+    }
+    /* Display Desktop & Landscape Tablet */
+    .navigation.mobile {
+        display: block;
+    }
+
+    #burgerMenu {
+        display: none;
+        height: 560.5px;
+    }
+
+    /*--------------------------------------------------------------*/
+    .home {
+        h1 {
+            margin: 0;
+        }
+        background-position: 0;
+        #home {
+            top: 0;
+            min-height: 350px;
+        }
+        .header {
+            &-left {
+                position: relative;
+                background-color: transparent;
+                padding-left: 0;
+                height: unset;
+            }
+            &-right {
+                display: none;
+            }
+        }
+        .mobile-menu-logo {
+            display: none;
+        }
+    }
+    /*--------------------------------------------------------------*/
+    #about {
+    	@include imgSection("#{$baseImg}img/about-angelus-m.jpg");
+    	min-height: 620px;
+    }
+    /*--------------------------------------------------------------*/
+    #activity {
+    	@include imgSection("#{$baseImg}img/activite-angelus-m.jpg");
+    	min-height: 620px;
+    }
+    /*--------------------------------------------------------------*/
+    #belleile {
+    	@include imgSection("#{$baseImg}img/belleile-angelus-m.jpg");
+    	min-height: 620px;
+    	h2 {
+    		color: $colorMain;
+    	}
+    	h3 {
+    		line-height: 1.1;
+    	}
+    	a {
+    		font-size: 1.6rem;
+    	}
+    }
+    /*--------------------------------------------------------------*/
+    #testimony {
+    	@include imgSection("#{$baseImg}img/home_3-m.jpg");
+    	min-height: 620px;
+    	h6 {
+    		font-size: 1.1em;
+    	}
+    }
+    /*--------------------------------------------------------------*/
+
+    .testimony {
+        display: none;
+    }
+    /*--------------------------------------------------------------*/
+      nav {
+        &.mobile {
+          ul {
+            li {
+              padding-bottom: .7rem;
+              a {
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+
+    /*--------------------------------------------------------------*/
+    /* Footer */
+    .footer {
+        letter-spacing: 1px;
+    }
+}

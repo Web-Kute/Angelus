@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ajax - Load Php</title>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  
+  <body>
+    <input type="text" id="ref">
+    <button id="action">Afficher</button><br />
+    <div id="r">Entrez un nombre compris entre 1 et 10 pour afficher un proverbe chinois</div>
+
+<!--     <script>
+      $(function() {
+        $('#action').click(function() {
+          let param = 'l=' + $('#ref').val();
+          $('#r').load('http://angelus.local/ajax/proverbe.php',param);
+        });  
+      });
+      </script> -->
+      <script>
+        // GET
+        $(function() {
+          $('#action').click(function() {
+            $.get('proverbe.php?l=1', function(data) {
+              alert(data);
+            });    
+          });  
+        });
+
+        // POST
+        // $.post('traiteFormulaire.php', { nom: 'Pierre34', heure: '2pm', post: 'Un peu de texte récupéré dans un formulaire HTML et destiné à être posté dans un forum.' },
+        //    function(data) {
+        //      alert(data);
+        //    });
+
+
+// La méthode AJAX
+  // type: type de la requête,GETouPOST(GETpar défaut).
+
+  // url: adresse à laquelle la requête doit être envoyée.
+
+  // data: données à envoyer au serveur.
+
+  // dataType: type des données qui doivent être retournées par le serveur :xml,html,script,json,text.
+
+  // success: fonction à appeler si la requête aboutit.
+
+  // error: fonction à appeler si la requête naboutit pas.
+
+  // timeout: délai maximum (en millisecondes) pour que la requête soit exécutée. Si ce délai est dépassé, la fonction spécifiée dans le paramètre error sera exécutée.
+  
+$.ajax(adresse, {options});
+
+$.ajax({options});
+
+        </script>
+  </body>
+</html>

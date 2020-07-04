@@ -1,0 +1,519 @@
+/*************************************/
+/** MEDIA QUERIES **/
+/*** Responsive Styles ***/
+/**************************************/
+@media only screen and (min-width: 322px) and (max-width : 823px) {
+	/* Reset */
+	ul, ol {
+		font-size: .9rem;
+	}
+	#breadcrumbs {
+	    display: none;
+	}
+/*--------------------------------------------------------------*/
+	body {
+		&:not(.home) {
+			.entry-content {
+				width: 90%;
+				padding: 0;
+				margin: 0 auto;
+				p, li {
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+	#mobile-menu {
+		display: flex;
+		display: -webkit-flex;
+	}
+/*--------------------------------------------------------------*/
+	.home {
+		@include imgSection("#{$baseImg}img/home-angelus-m.jpg");
+		background-position: 0;
+		h1 {
+			font-family: 'PlayfairDisplay-BoldItalic';
+			&.entry-title {
+			display: flex;
+			display: -webkit-flex;
+			-webkit-align-items: flex-start;
+			        align-items: flex-start;
+			-webkit-justify-content: center;
+			        justify-content: center;
+			font-size: 10vw;
+			color: $colorLink;
+			}
+		}
+		h2 {
+			font-size: 1.8em;
+			&.sub-title {
+				font-size: 1.3em;
+				letter-spacing: 1px;
+			}
+		}
+		.header {
+			&-left {
+				position: relative;
+				background-color: transparent;
+				padding-left: 0;
+				height: unset;
+			}
+			&-right {
+				display: none;
+			}
+		}
+		.site-main {
+			top: 0;
+			margin-bottom: 0;
+			h1 {
+				font-size: 2.5em;
+				margin: 1rem 0 0;
+			}
+		}
+		.cta_home.aligncenter {
+			margin-bottom: 0;
+		}
+	}
+/*** End Home ****/
+	.logo-home {
+		display: block;
+		max-height: 290px;
+		-webkit-transform: scale(0.7);
+		   -moz-transform: scale(0.7);
+		    -ms-transform: scale(0.7);
+		     -o-transform: scale(0.7);
+		        transform: scale(0.7);
+	}
+	.testimony {
+		display: none;
+	}
+	.entry-content {
+	    h2 {
+	        font-size: 1.3rem;
+	    }
+	}
+	/*--------------------------------------------------------------*/
+	/* Single Pages */
+	.single {
+		h3 {
+			font-size: 1.3rem;
+		}
+	}
+	/*--------------------------------------------------------------*/
+	/* Crédits */
+	.page-template-page-credits {
+		background-image: unset;
+	    position: relative;
+	    display: flex;
+	    display: -webkit-flex;
+	    align-items: center;
+	    .site-main {
+	    	h1 {
+	    		color: $colorLink;
+	    	}
+	        h2, p, a {
+	            color: $black;
+	        }
+	        .pages-content {
+	            width: 100%;
+	            margin-bottom: 2rem;
+	            padding: 0 1rem;
+	        }
+	    }
+	}
+	/*--------------------------------------------------------------*/
+	:not(.home) .header {
+		&-left {
+			max-width: 50px;
+			margin-top: 20px;
+			margin-left: 1rem;
+			background-color: transparent;
+			z-index: 200;
+		}
+		&-right {
+			max-width: 40px;
+			min-width: 40px;
+			margin-right: 1rem;
+			padding: 0;
+			&-menu {
+				display: none;
+			}
+			&-social {
+				-webkit-transform: scale(.9);
+				   -moz-transform: scale(.9);
+				    -ms-transform: scale(.9);
+				     -o-transform: scale(.9);
+				        transform: scale(.9);
+			    padding-left: 0;
+				span {
+					position: relative;
+					&:nth-child(2) {
+						top: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	h1{
+		&.entry-title {
+			position: relative;
+			font-size: 2.1rem;
+			margin: 2rem auto;
+			padding: 0 1rem;
+		}
+	}
+	h2 {
+		&.home-title {
+			display: block;
+			font-family: 'PlayfairDisplay-Italic';
+			font-size: 1.5rem;
+			color: $white;
+			height: 10vh;
+			vertical-align: top;
+			line-height: 1;
+			letter-spacing: 4px;
+			position: relative;
+			top: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	h3 {
+		font-size: 1.25rem;
+		font-weight: 400;
+	}
+	/*--------------------------------------------------------------*/
+	/* Modal */
+	.modal-body {
+		h1 {
+			&.entry-title {
+				display: none;
+			}
+		}
+		.container {
+			padding: 0;
+		}
+		p {
+			font-size: .8em;
+			text-align: center;
+			&.boat-text {
+				text-align: left;
+			}
+		}
+		.circle-border {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	/* Home */
+	.rwd-break {
+	    display: block;
+	    line-height: 0;
+	}
+	/* Number Home */
+	.container-number {
+		.number {
+			font-size: 1.25rem;
+			span {
+				font-size: 1.875rem;
+			}
+		}
+	}
+	/* About */
+	#about {
+		h2, h3 {
+			margin-bottom: 1rem;
+		}
+		p, h6 {
+			font-size: initial;
+			margin-bottom: 0;
+		}
+		.about-team {
+			margin: 2rem auto;
+			justify-content: space-around;
+			a {
+				color: $colorSecondary;
+				font-size: 1.5em;
+				-webkit-transition: all .5s;
+				   -moz-transition: all .5s;
+				    -ms-transition: all .5s;
+				     -o-transition: all .5s;
+				        transition: all .5s;
+				border-bottom: 1px solid $colorSecondary;
+				&::after {
+					content: " ";
+					position: relative;
+				    height: 9px;
+				    width: auto;
+				    top: 43px;
+				    left: -52px;
+					border-bottom: 1px solid $colorSecondary;
+				}
+			}
+		}
+	}
+	/* Activity */
+
+	#activity {
+		h2 {
+			margin-top: 2rem;
+			color: $colorSecondary;
+		}
+	}
+	.site__blog, .entry-content, .activity-page {
+		width: 90%;
+	}
+	.activity-page {
+		h1 {
+			margin: 1rem 0;
+			font-size: 2.2em;
+		}
+		h2 {
+			font-size: 1.5em;
+		}
+		p {
+			font-size: .9em;
+			.post__link {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	/* Belle Ile */
+	#belleile {
+		h3 {
+			font-size: 1.5rem;
+		}
+		a {
+			font-size: 1.4em;
+		}
+		.arrow-right-belleile {
+		    span {
+		        svg {
+		            &.fa-arrow-circle-right {
+		            	-webkit-transform: scale(.9);
+		            	   -moz-transform: scale(.9);
+		            	    -ms-transform: scale(.9);
+		            	     -o-transform: scale(.9);
+		            	        transform: scale(.9);
+		            }
+		        }
+		    }
+		}
+		.text-belle {
+		    font-size: 1.2rem;
+		    padding-bottom: 1rem;
+		}
+	}
+
+	.arrow-right {
+		width: 100%;
+		text-align: center;
+	}
+	/* MENU */
+	/* Hide Desktop & Landscape Tablet */
+	.navigation.desktop {
+		display: none;
+	}
+	/* Display Mobile & Portrait Tablet */
+	.navigation.mobile {
+		display: block;
+	}
+	#container-main-menu {
+		display: none;
+	}
+	#navigation-pages-top {
+		margin: 2rem 0 0 0.3rem;
+		padding: 0;
+		ul {
+			padding: 0;
+			li {
+				line-height: 1.5;
+				a {
+					font-size: 0.8em;
+					letter-spacing: 0;
+					&:before {
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Pages Content */
+	.pages-content {
+		width: 90%;
+		h1 {
+			margin: 1rem 0;
+			font-size: 2.1rem;
+		}
+		h2 {
+			font-size: 1.4rem;
+		}
+		p {
+			font-size: .9em;
+		}
+	}
+	/* Belle ile menu */
+	.site-main {
+		.nav-tabs {
+			.nav-item {
+				padding-right: 10px;
+				.nav-link {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+	/* Activity & Fare */
+	/* Home */
+	ul {
+		&.activity-fare {
+			margin-top: 2rem;
+			li {
+				list-style: none;
+				margin-bottom: 2vh;
+				a {
+					font-size: 1.1rem;
+					color: $white;
+					-webkit-transition: color 0.5s;
+					   -moz-transition: color 0.5s;
+					    -ms-transition: color 0.5s;
+					     -o-transition: color 0.5s;
+					        transition: color 0.5s;
+					&:hover {
+						color: $colorSecondary;
+					}
+					&:before {
+						font-size: 1rem;
+						content: ".";
+					    margin-top: -1rem;
+					    margin-left: -1rem;
+					    -webkit-transform: scale(3.2);
+					       -moz-transform: scale(3.2);
+					        -ms-transform: scale(3.2);
+					         -o-transform: scale(3.2);
+					            transform: scale(3.2);
+					}
+				}
+			}
+		}
+	}
+
+	/* Slick Carousel */
+	.testimonials {
+	    height: inherit;
+
+	    h4 {
+	        font-size: 1.875rem;
+	        line-height: 1.5;
+	    }
+
+	    h5 {
+	        font-family: 'PlayfairDisplay-Italic';
+	        color: $colorMain;
+	        font-size: 1.6rem;
+	        line-height: 1.1;
+	        padding-left: 2rem;
+	        letter-spacing: -0.8px;
+	        position: relative;
+	        text-align: center;
+	        &:before {
+	            content: "";
+	            position: absolute;
+	            top: -20px;
+	            left: -7px;
+	            width: 2em;
+	            height: 2em;
+	            background-image: url(#{$baseImg}icons/left-quote.svg);
+	            background-repeat: no-repeat;
+	            background-position: center center;
+	        }
+	    }
+	    .slick-slide {
+	        h4 {
+	            text-align: center;
+	        }
+	        p {
+	            font-size: 1.2rem;
+	            line-height: 1.3;
+	        }
+	    }
+	}
+	/* Partners */
+	#partners {
+		p {
+			font-size: 0.8em;
+		}
+	}
+	/*--------------------------------------------------------------*/
+	                        /* Aside */
+	/*--------------------------------------------------------------*/
+	.wrapper {
+	    display: flex;
+	    display: -webkit-flex;
+	    -webkit-flex-direction: column;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	    .content-single {
+	        width: 100%;
+	    }
+	}
+	.site-main {
+	    .side_bar {
+	        margin: 2rem;
+	    }
+	}
+	/* Footer */
+	.footer {
+			#copyright {
+				margin-right: 0;
+				font-size: .7rem;
+			}
+		}
+
+	/* Footer Socket */
+	.socket {
+		font-size: 0.7rem;
+		&-col {
+			padding: 0;
+		}
+	}
+	a {
+		&.top {
+			right: 0;
+			-webkit-transform: scale(.5);
+			   -moz-transform: scale(.5);
+			    -ms-transform: scale(.5);
+			     -o-transform: scale(.5);
+			        transform: scale(.5);
+		}
+	}
+	/* Nav Articles */
+	.nav-links {
+		font-size: 0.8em;
+		.nav-previous {
+			margin-right: 1rem;
+		}
+		.nav-next {
+			margin-left: 1rem;
+		}
+	}
+	/* Trip Advisor */
+	.wprev-no-slider {
+	    width: 100%;
+	    margin: 0;
+	    ul {
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	}
+	/* Cookie Law */
+	#cookie-law-info-bar {
+		span {
+			font-size: .8rem;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+a:hover {
+  text-decoration: none;
+}
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+.btn:focus {
+	-webkit-box-shadow: unset;
+	        box-shadow: unset;
+}
+.btn-primary {
+	background-color:  #025E73;	
+	border: none;
+	&:hover {
+		background-color: #B4C712;
+	}
+	&:active {
+		background-color: #025E73!important;
+		border: none !important;
+		-webkit-box-shadow: unset !important;
+		        box-shadow: unset !important;
+	}
+	&:focus {
+		background-color: #025E73;
+	}
+}

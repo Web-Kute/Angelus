@@ -1,0 +1,149 @@
+/*https://angelus-plongee.com/wp-content/themes/angelus-plongee-child/style.css*/
+@media only screen and (min-width : 823px) and (max-height: 414px) and (orientation:landscape) {
+
+
+	/*--------------------------------------------------------------*/
+		.home {
+			@include imgSection("#{$baseImg}img/home-angelus-m.jpg");
+			h1 {
+				margin: 0;
+			}
+			h2 {
+				font-size: 1.8em;
+				&.sub-title {
+					font-size: 1.5em;
+					margin-bottom: 1rem;
+				}
+			}
+
+			.site-main {
+				top: 0;
+				margin-bottom: 0;
+				h1 {
+				    font-size: 2.8em;
+				}
+			}
+
+			#home {
+				top: 0;
+				min-height: 370px;
+			}
+		}
+		#logo {
+			margin-top: 1.25rem;
+			margin-bottom: 2rem;
+			text-align: center;
+			width: 100%;
+			height: 100px;
+		}
+		.logo-home {
+			display: block;
+			max-height: 290px;
+			-webkit-transform: scale(0.7);
+			   -moz-transform: scale(0.7);
+			    -ms-transform: scale(0.7);
+			     -o-transform: scale(0.7);
+			        transform: scale(0.7);
+		}
+		.testimony {
+			display: none;
+		}
+		/*--------------------------------------------------------------*/
+		#about {
+			@include imgSection("#{$baseImg}img/about-angelus-m.jpg");
+			min-height: 620px;
+		}
+		/*--------------------------------------------------------------*/
+		#activity {
+			@include imgSection("#{$baseImg}img/activite-angelus-m.jpg");
+			min-height: 620px;
+		}
+		/*--------------------------------------------------------------*/
+		#contact {
+			@include imgSection("#{$baseImg}img/contact-angelus-m.jpg");
+			min-height: 620px;
+		}
+		/*--------------------------------------------------------------*/
+		#belleile {
+			@include imgSection("#{$baseImg}img/belleile-angelus-m.jpg");
+			min-height: 620px;
+			h2 {
+				color: $colorMain;
+			}
+			h3 {
+				line-height: 1.1;
+			}
+			a {
+				font-size: 1.6rem;
+			}
+		}
+		/*--------------------------------------------------------------*/
+		#testimony {
+			@include imgSection("#{$baseImg}img/home_3-m.jpg");
+			min-height: 620px;
+			h6 {
+				font-size: 1.1em;
+			}
+		}
+		/*--------------------------------------------------------------*/
+		/* Home */
+		.testimony {
+		    margin-bottom: 0;
+		    h3 {
+		    	font-size: 1.3em;
+		    }
+		}
+		#about {
+		    h2 {
+		        margin: 2rem;
+		    }
+		    h3 {
+		        margin: 0;
+		        font-size: 1.5rem;
+		    }
+		}
+		#activity {
+		    ul {
+		        li {
+		            a {
+		                font-size: 1.3em;
+		            }
+		        }
+		    }
+		}
+		#testimony {
+			.slick-slide {
+		        p {
+		            color: $white;
+		            font-size: 1.3rem;
+		            font-weight: 500;
+		            text-align: center;
+		        }
+	    	}
+		}
+		#belleile {
+		    h3 {
+		        font-size: 1.6rem;
+		        letter-spacing: 0;
+		    }
+		   .arrow-right-belleile {
+		        top: -2rem;
+		   }
+		}
+		/* Number Home */
+		.container-number {
+		    .number {
+		        font-size: 1.875rem;
+		        span {
+		            font-size: 2rem;
+		        }
+		    }
+		}
+		ul {
+		    &.activity-fare {
+		        margin-top: 0;
+		    }
+		}
+
+
+}

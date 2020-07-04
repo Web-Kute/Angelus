@@ -1,0 +1,106 @@
+@media only screen and (min-width:1025px) and (max-width:1224px) {
+    /* MENU */
+    /* Display Desktop & Landscape Tablet */
+    .navigation.desktop {
+        display: block;
+    }
+    /* Hide Mobile & Portrait Tablet */
+    .navigation.mobile {
+        display: none;
+    }
+    /* HEADER */
+    .header-left {
+        &-logo {
+            text-align: center;
+            a {
+                font-size: 2.2rem;
+            }
+        }
+        &-text-sub {
+            font-size: 0.8rem;
+        }
+    }
+    .header-center {
+        text-align: center;
+    }
+    .header-right {
+        position: relative;
+        &-social {
+            position: relative;
+            top: 20px;
+            text-align: center;
+        }
+        &-menu {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    /*--------------------------------------------------------------*/
+    /* Home */
+    .testimony {
+        margin-bottom: 1rem;
+        h3 {
+        	font-size: 1.3em;
+        }
+    }
+    #about {
+        h2 {
+            margin: 2rem;
+        }
+        h3 {
+            margin: 0;
+        }
+    }
+    #activity {
+        ul {
+            li {
+                a {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+    #belleile {
+        h3 {
+            font-size: 1.6rem;
+            letter-spacing: 0;
+        }
+       .arrow-right-belleile {
+            top: -2rem;
+       }
+    }
+    /* Number Home */
+    .container-number {
+        .number {
+            font-size: 1.875rem;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+    ul {
+        &.activity-fare {
+            margin-top: 0;
+            li {
+                a {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    /* Nav TABS */
+    .nav-tabs {
+        .nav-item {
+            .nav-link {
+                font-size: 1.2em;
+            }
+        }
+    }
+/*--------------------------------------------------------------*/
+    .activity-page {
+        p {
+            font-size: 1em;
+        }
+    }
+}

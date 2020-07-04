@@ -1,0 +1,263 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+/**
+* Remove default margin.
+*/
+/* FONT FACES */
+/* ROboto Slab */
+@font-face {
+    font-family: 'Roboto-Slab Bold';
+    src: url("../fonts/roboto-slab/RobotoSlab-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Slab';
+    src: url("../fonts/roboto-slab/RobotoSlab-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Slab Light';
+    src: url("../fonts/roboto-slab/RobotoSlab-Light.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Slab Thin';
+    src: url("../fonts/roboto-slab/RobotoSlab-Thin.ttf") format("truetype");
+    font-display: swap;
+}
+/*--------------------------------------------------------*/
+/* Playfair Display */
+@font-face {
+    font-family: 'PlayfairDisplay-Black';
+    src: url("../fonts/playfair-display/PlayfairDisplay-Black.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-BlackItalic';
+    src: url("../fonts/playfair-display/PlayfairDisplay-BlackItalic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url("../fonts/playfair-display/PlayfairDisplay-Italic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-Black';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-Black.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-BlackItalic';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-BlackItalic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-Bold';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-Bold.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-BoldItalic';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-BoldItalic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-Italic';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-Italic.otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PlayfairDisplaySC-Regular';
+    src: url("../fonts/playfair-display/PlayfairDisplaySC-Regular.otf") format("opentype");
+    font-display: swap;
+}
+/*--------------------------------------------------------*/
+body {
+  margin: 0;
+  background: url(../img/plongee-belle-ile-en-mer.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/**
+* Remove border when inside `a` element in IE 8/9/10.
+*/
+
+img {
+  border: 0;
+}
+/* Preformatted */
+h1 {
+    font-family: 'PlayfairDisplaySC-Regular', serif;
+    font-size: 5.5vh;
+    font-weight: 300;
+    line-height: 1;
+    color: #05407a;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+h2 {
+    color: #FFF;
+    font-family: 'Roboto-Slab Light', sans-serif;
+    font-size: 5vh;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+h3 {
+
+    font-family: 'PlayfairDisplaySC-Regular', sans-serif;
+    font-weight: 300;
+    font-size: 4vh;
+}
+
+a {
+    color: #05407a;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    transition-duration: 0.25s;
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+a:hover {
+    border-bottom: 1px solid rgba(5, 64, 122, 1);
+    padding-bottom: 3px;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+/*    background: url(../img/plongee-belle-ile-en-mer.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;*/
+}
+
+.logo a {
+    border-bottom: none;
+}
+
+.logo img {
+    transition-duration: 1s;
+}
+
+.logo a:hover {
+    border-bottom: none;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.home {
+    display: table-row;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.name2 {
+    font-weight: 300;
+}
+
+
+
+/********** RESPONSIVE **********/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 479px) {
+    .logo img {
+        height: 120px;
+        width: 120px;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (orientation : landscape)
+/*and (min-width : 321px)*/ {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+    .logo img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    .logo img {
+        height: 190px;
+        width: 190px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 1024px) and (max-width : 1224px) {
+    .logo img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+/* iPads pro ----------- */
+@media only screen and (min-device-width : 1225px) and (orientation : landscape) {
+    .logo img {
+        height: 180px;
+        width: 180px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

@@ -1,0 +1,18 @@
+PROCESSED on Wed, 10 Jun 2020 14:33:45 +0000
+//angelus.local/wp-content/plugins/formidable/css/formidableforms.css
+//angelus.local/wp-includes/css/dist/block-library/style.min.css
+//angelus.local/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css
+//angelus.local/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css
+//angelus.local/wp-content/plugins/wp-file-upload/css/wordpress_file_upload_style_relaxed.css
+//angelus.local/wp-content/plugins/wp-file-upload/css/wordpress_file_upload_style_safe_relaxed.css
+//angelus.local/wp-content/plugins/wp-tripadvisor-review-slider/public/css/wprev-public_template1.css
+//angelus.local/wp-content/plugins/wp-tripadvisor-review-slider/public/css/wptripadvisor_w3.css
+//angelus.local/wp-content/themes/Angelus-Plongee/bootstrap/dist/css/custom.css
+//angelus.local/wp-content/themes/Angelus-Plongee/bootstrap/dist/css/bootstrap.min.css
+//angelus.local/wp-content/themes/Angelus-Plongee/style.min.css
+//angelus.local/wp-content/themes/angelus-plongee-child/style.min.css
+//angelus.local/wp-content/plugins/simple-lightbox/client/css/app.css
+//angelus.local/wp-content/themes/angelus-plongee-child/slick/slick.min.css
+//angelus.local/wp-content/themes/angelus-plongee-child/slick/slick-theme.min.css
+//angelus.local/wp-content/themes/angelus-plongee-child/assets/css/animate.min.css
+PROCESSED from http://angelus.local/?cache-buster=1419
