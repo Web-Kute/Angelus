@@ -13,7 +13,7 @@
 
 <!-- #content -->
 <?php if( is_page_template('page.php') || is_archive() ) {
-	$post_id = 519;// Partners page ID(519, inline)
+	$post_id = 500;// Partners page ID(500:local, 519:inline)
 	$content_post = get_post($post_id);
 	$content = $content_post->post_content;
 	$content = apply_filters('the_content', $content);

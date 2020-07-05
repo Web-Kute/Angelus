@@ -14,10 +14,10 @@ function angelus_register_assets() {
     $parenthandle = 'parent-style';
     $theme = wp_get_theme();
     wp_enqueue_style( $parenthandle, get_template_directory_uri() . '/style.min.css', $dependencies, $theme->parent()->get('Version') ); //Parent Theme style.css
-    wp_enqueue_style( 'angelus-plongee-style', get_stylesheet_directory_uri() . '/style.css', array($parenthandle), $theme->get('Version') ); //Child Theme style.css
+    wp_enqueue_style( 'angelus-plongee-style', get_stylesheet_directory_uri() . '/style.min.css', array($parenthandle), $theme->get('Version') ); //Child Theme style.css
 
     // Load Custom JS
-    wp_enqueue_script( 'angelus_plongee', get_stylesheet_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'angelus_plongee', get_stylesheet_directory_uri() . '/assets/js/custom.min.js', array( 'jquery' ), '1.0', true );
     // Load Ajax
     // Envoyer une variable de PHP à JS proprement
     // wp_localize_script( 'angelus_plongee', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
