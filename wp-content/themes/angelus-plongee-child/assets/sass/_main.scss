@@ -123,7 +123,9 @@ ul {
     }
     .site-main {
         position: relative;
-        flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
     }
     h1 {
         font-size: 3.875em;

@@ -24,60 +24,62 @@
 <body <?php body_class(); ?> id="angel" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
      <?php wp_body_open(); ?>
     <!-- Desktop & Landscape Tablet Menu -->
-    <div class="header desktop-menu" id="container-main-menu">
-        <nav class="navigation desktop">
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Header Menu Left -->
-                    <?php get_template_part( 'template-parts/header-left' ); ?>
-                    <!-- Header Logo Center -->
-                    <?php get_template_part( 'template-parts/header-center' ); ?>
-                    <!-- Header Menu Right -->
-                    <?php get_template_part( 'template-parts/header-right' ); ?>
+    <header>
+        <div class="header desktop-menu" id="container-main-menu">
+            <nav class="navigation desktop">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Header Menu Left -->
+                        <?php get_template_part( 'template-parts/header-left' ); ?>
+                        <!-- Header Logo Center -->
+                        <?php get_template_part( 'template-parts/header-center' ); ?>
+                        <!-- Header Menu Right -->
+                        <?php get_template_part( 'template-parts/header-right' ); ?>
+                    </div>
                 </div>
-            </div>
-            <div class="menu-border"></div>
-        </nav>
-    </div>
-    <!-- Mobile & Portrait Tablet Menu -->
-    <nav class="mobile" id="mobile-menu">
-        <div class="navigation" id="burgerMenu">
-            <div id="logo">
-                <?php get_template_part( 'template-parts/logo-mobile' ); ?>
-            </div>
-            <div class="navbar-nav ml-3 mr-3 mt-2 mt-lg-2">
-                <?php wp_nav_menu( array( 'theme_location' => 'left-menu' ) ); ?>
-                <?php wp_nav_menu( array( 'theme_location' => 'right-menu' ) ); ?>
-            </div>
+                <div class="menu-border"></div>
+            </nav>
         </div>
-        <!-- Header Left Mobile -->
-        <div class="header-left">
-            <div class="mobile-menu-icon">
-                <div class="bar-menu circle-menu">
-                    <div class="icon-bar"></div>
-                    <div class="icon-bar"></div>
-                    <div class="icon-bar"></div>
-                    <div class="small-circle-menu"></div>
+        <!-- Mobile & Portrait Tablet Menu -->
+        <nav class="mobile" id="mobile-menu">
+            <div class="navigation" id="burgerMenu">
+                <div id="logo">
+                    <?php get_template_part( 'template-parts/logo-mobile' ); ?>
                 </div>
-                <div class="mobile-menu-close">
-                    <span class="close-menu">
-                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#B4C712"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path>
-                        </svg>
-                    </span>
+                <div class="navbar-nav ml-3 mr-3 mt-2 mt-lg-2">
+                    <?php wp_nav_menu( array( 'theme_location' => 'left-menu' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'right-menu' ) ); ?>
                 </div>
             </div>
-        </div>
-        <div class="container d-flex justify-content-center menu-pages">
-            <div class="row">
-                <div class="col">
-                    <div class="mobile-menu-logo">
-                        <?php get_template_part( 'template-parts/logo-mobile' ); ?>
+            <!-- Header Left Mobile -->
+            <div class="header-left">
+                <div class="mobile-menu-icon">
+                    <div class="bar-menu circle-menu">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="small-circle-menu"></div>
+                    </div>
+                    <div class="mobile-menu-close">
+                        <span class="close-menu">
+                            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#B4C712"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path>
+                            </svg>
+                        </span>
                     </div>
                 </div>
             </div>
-        </div>
-        <?php get_template_part( 'template-parts/header-right' ); ?>
-    </nav>
+            <div class="container d-flex justify-content-center menu-pages">
+                <div class="row">
+                    <div class="col">
+                        <div class="mobile-menu-logo">
+                            <?php get_template_part( 'template-parts/logo-mobile' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php get_template_part( 'template-parts/header-right' ); ?>
+        </nav>
+    </header>
 <?php
 if( is_page_template('page.php') || is_archive() || is_single()) {
     if ( function_exists('yoast_breadcrumb') ) {
