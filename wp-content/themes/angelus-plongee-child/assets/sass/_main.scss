@@ -93,7 +93,9 @@ ul {
 .site-main {
     &:not(.home) {
         position: relative;
-        flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
         ul {
             li {
                 list-style-type: circle;
